@@ -145,7 +145,7 @@ footer {
         width: 20px;
     }
     main {
-        content-visibility: hidden;
+        display: none;
     }
     .movie {
         display: flex;
