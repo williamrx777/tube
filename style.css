@@ -1,0 +1,122 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 8vh 130vh 20vh;
+    grid-template-areas: "h h"
+                        "m a";
+}
+
+header {
+    grid-area: h;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    width: 20px;
+    
+}
+.youtube {
+    width: 120px;
+}
+.busca {
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#search {
+    
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.notification {
+    width: 30px;
+    
+}
+.profile img{
+    width: 50px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+main {
+    grid-area: m;
+    overflow-y: hidden;
+}
+main:hover {
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width:10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+.menu-home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu-icon {
+    list-style-type: none;
+}
+.menu-link {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    gap: 25px;
+    align-items: center;
+   font-family:sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+}
+.menu-home__rodape {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.menu-link__rodape {
+    display: flex;
+    text-decoration: none;
+    color: rgb(92, 85, 85);
+   font-family:sans-serif;
+   font-weight: 400;
+   font-size: 12px;
+}
+aside {
+    grid-area: a;
+}
+.movie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1000;
+    justify-items: center;
+    
+}
