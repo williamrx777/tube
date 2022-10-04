@@ -116,7 +116,50 @@ aside {
 .movie {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 1000;
     justify-items: center;
     
+}
+footer {
+    display: none;
+}
+@media screen and (max-width:600px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+        max-width: 340px;
+    }
+    .logo {
+        display: none;
+    }
+    .youtube {
+        max-width: 80px;
+    }
+    .busca {
+        display: none;
+    }
+    .notification {
+        width: 20px;
+    }
+    .profile img{
+        width: 20px;
+    }
+    main {
+        content-visibility: hidden;
+    }
+    .movie {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        display: flex;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu-link {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 33px;
+    }
 }
